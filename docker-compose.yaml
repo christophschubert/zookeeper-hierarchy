@@ -1,0 +1,74 @@
+version: "3"
+services:
+  zookeeper-1:
+    image: confluentinc/cp-zookeeper
+    hostname: zookeeper-1
+    environment:
+      ZOOKEEPER_SERVER_ID: "1"
+      ZOOKEEPER_CLIENT_PORT: 2181
+      ZOOKEEPER_SERVERS: zookeeper-1:2888:3888;zookeeper-2:2888:3888;zookeeper-3:2888:3888;zookeeper-4:2888:3888;zookeeper-5:2888:3888;zookeeper-6:2888:3888;zookeeper-7:2888:3888;zookeeper-8:2888:3888;zookeeper-9:2888:3888
+      ZOOKEEPER_GROUPS: 1:2:3;4:5:6;7:8:9
+  zookeeper-2:
+    image: confluentinc/cp-zookeeper
+    hostname: zookeeper-2
+    environment:
+      ZOOKEEPER_SERVER_ID: "2"
+      ZOOKEEPER_CLIENT_PORT: 2181
+      ZOOKEEPER_SERVERS: zookeeper-1:2888:3888;zookeeper-2:2888:3888;zookeeper-3:2888:3888;zookeeper-4:2888:3888;zookeeper-5:2888:3888;zookeeper-6:2888:3888;zookeeper-7:2888:3888;zookeeper-8:2888:3888;zookeeper-9:2888:3888
+      ZOOKEEPER_GROUPS: 1:2:3;4:5:6;7:8:9
+  zookeeper-3:
+    image: confluentinc/cp-zookeeper
+    hostname: zookeeper-3
+    environment:
+      ZOOKEEPER_SERVER_ID: "3"
+      ZOOKEEPER_CLIENT_PORT: 2181
+      ZOOKEEPER_SERVERS: zookeeper-1:2888:3888;zookeeper-2:2888:3888;zookeeper-3:2888:3888;zookeeper-4:2888:3888;zookeeper-5:2888:3888;zookeeper-6:2888:3888;zookeeper-7:2888:3888;zookeeper-8:2888:3888;zookeeper-9:2888:3888
+      ZOOKEEPER_GROUPS: 1:2:3;4:5:6;7:8:9
+  zookeeper-4:
+    image: confluentinc/cp-zookeeper
+    hostname: zookeeper-4
+    environment:
+      ZOOKEEPER_SERVER_ID: "4"
+      ZOOKEEPER_CLIENT_PORT: 2181
+      ZOOKEEPER_SERVERS: zookeeper-1:2888:3888;zookeeper-2:2888:3888;zookeeper-3:2888:3888;zookeeper-4:2888:3888;zookeeper-5:2888:3888;zookeeper-6:2888:3888;zookeeper-7:2888:3888;zookeeper-8:2888:3888;zookeeper-9:2888:3888
+      ZOOKEEPER_GROUPS: 1:2:3;4:5:6;7:8:9
+  zookeeper-5:
+    image: confluentinc/cp-zookeeper
+    hostname: zookeeper-5
+    environment:
+      ZOOKEEPER_SERVER_ID: "5"
+      ZOOKEEPER_CLIENT_PORT: 2181
+      ZOOKEEPER_SERVERS: zookeeper-1:2888:3888;zookeeper-2:2888:3888;zookeeper-3:2888:3888;zookeeper-4:2888:3888;zookeeper-5:2888:3888;zookeeper-6:2888:3888;zookeeper-7:2888:3888;zookeeper-8:2888:3888;zookeeper-9:2888:3888
+      ZOOKEEPER_GROUPS: 1:2:3;4:5:6;7:8:9
+  zookeeper-6:
+    image: confluentinc/cp-zookeeper
+    hostname: zookeeper-6
+    environment:
+      ZOOKEEPER_SERVER_ID: "6"
+      ZOOKEEPER_CLIENT_PORT: 2181
+      ZOOKEEPER_SERVERS: zookeeper-1:2888:3888;zookeeper-2:2888:3888;zookeeper-3:2888:3888;zookeeper-4:2888:3888;zookeeper-5:2888:3888;zookeeper-6:2888:3888;zookeeper-7:2888:3888;zookeeper-8:2888:3888;zookeeper-9:2888:3888
+      ZOOKEEPER_GROUPS: 1:2:3;4:5:6;7:8:9
+  zookeeper-7:
+    image: confluentinc/cp-zookeeper
+    hostname: zookeeper-7
+    environment:
+      ZOOKEEPER_SERVER_ID: "7"
+      ZOOKEEPER_CLIENT_PORT: 2181
+      ZOOKEEPER_SERVERS: zookeeper-1:2888:3888;zookeeper-2:2888:3888;zookeeper-3:2888:3888;zookeeper-4:2888:3888;zookeeper-5:2888:3888;zookeeper-6:2888:3888;zookeeper-7:2888:3888;zookeeper-8:2888:3888;zookeeper-9:2888:3888
+      ZOOKEEPER_GROUPS: 1:2:3;4:5:6;7:8:9
+  zookeeper-8:
+    image: confluentinc/cp-zookeeper
+    hostname: zookeeper-8
+    environment:
+      ZOOKEEPER_SERVER_ID: "8"
+      ZOOKEEPER_CLIENT_PORT: 2181
+      ZOOKEEPER_SERVERS: zookeeper-1:2888:3888;zookeeper-2:2888:3888;zookeeper-3:2888:3888;zookeeper-4:2888:3888;zookeeper-5:2888:3888;zookeeper-6:2888:3888;zookeeper-7:2888:3888;zookeeper-8:2888:3888;zookeeper-9:2888:3888
+      ZOOKEEPER_GROUPS: 1:2:3;4:5:6;7:8:9
+  zookeeper-9:
+    image: confluentinc/cp-zookeeper
+    hostname: zookeeper-9
+    environment:
+      ZOOKEEPER_SERVER_ID: "9"
+      ZOOKEEPER_CLIENT_PORT: 2181
+      ZOOKEEPER_SERVERS: zookeeper-1:2888:3888;zookeeper-2:2888:3888;zookeeper-3:2888:3888;zookeeper-4:2888:3888;zookeeper-5:2888:3888;zookeeper-6:2888:3888;zookeeper-7:2888:3888;zookeeper-8:2888:3888;zookeeper-9:2888:3888
+      ZOOKEEPER_GROUPS: 1:2:3;4:5:6;7:8:9
